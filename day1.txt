@@ -3,3 +3,4 @@ i'm aiming to learn javascript and many other things through it.
 
 i am going to complete 1 project by today.
 
+checking up things with FISH
