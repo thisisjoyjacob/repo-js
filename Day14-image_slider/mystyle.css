@@ -1,0 +1,22 @@
+#btnl{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: limegreen;
+}
+
+#btnr{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: limegreen;
+}
+
+img{
+    width: 958px;
+    height: 578px;
+    border-radius: 50px;
+    padding: 3%;
+}
+
+.wrapper{
+    margin-left: 100px;
+}
