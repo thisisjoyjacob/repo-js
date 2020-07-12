@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial=scale=1.0">
+        <title>Javascript Alarm Clock</title>
+        <link href="mystyle.css" rel="stylesheet" type="text/css">
+        
+    </head>
+
+    <body>
+        <!-- CURRENT TIME   -->
+        <div id="main-container">
+            <h2 id="clock"></h2>
+        </div>
+
+        <!-- SET ALARM      -->
+        <div id="alarm-container">
+            <h1 class="header"> SET ALARM</h1>
+            <div id="tpick-h"></div>
+            <div id="tpick-m"></div>
+            <div id="tpick-s"></div>
+            <div>
+                <input type="button" value="Set" id="tset"/>
+                <input type="button" value="Reset" id="treset" disabled/>
+            </div>
+        </div>
+
+        <!--    ALARM SOUND     -->
+        <audio id="alarm-sound" loop>
+            <source src="wake-up-sound.mp3" type="audio/mp3">
+        </audio>
+
+        <!-- JS script -->
+        <script src="myscript.js"></script>
+    
+    </body>
+
+</html>

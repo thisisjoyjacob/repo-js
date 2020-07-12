@@ -1,0 +1,77 @@
+html{
+    padding: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    border: 8px solid lightcoral;
+    border-radius: 20px;
+    padding: 40px;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    background: url('https://www.goodfreephotos.com/albums/other-photos/angel-entering-heaven-with-light.jpg');
+
+}
+
+#clock {
+    height: 120px;
+    font-size: 40px;
+    font-family: Impact, sans-serif, 'Arial Narrow Bold';
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    font-weight: normal;
+    margin: 5px 0 10px 0;
+}
+
+#alarm-container {
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 10px;
+    background: #f2f2f2;
+    white-space: nowrap;
+}
+
+#tpick-h, #tpick-m, #tpick-s {
+    display: inline-block;
+    width: 32%;
+}
+
+#alarm-container select {
+    box-sizing: padding-box;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#tset, #treset {
+    box-sizing: padding-box;
+    width: 50%;
+    background: #3368b2;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+
+}
+
+#tset:disabled, #treset:disabled {
+    background: #aaa ;
+    color: #888;
+}
