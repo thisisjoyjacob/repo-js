@@ -20,8 +20,8 @@ body{
 #clock {
     height: 120px;
     font-size: 40px;
-    font-family: Impact, sans-serif;
-    font-weight: normal;
+    font-family: cursive, Impact, sans-serif;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
