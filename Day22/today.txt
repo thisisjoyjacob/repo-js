@@ -1,0 +1,4 @@
+#day22 of 100 days of code
+today i practised on CSS on freecodecamp.
+you can check my progress at www.freecodecamp.com/thisisjoyjacob
+
