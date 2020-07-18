@@ -2,7 +2,7 @@ var ctx;
 var factorvalue=1;
 var fontfamily = "65px 'Gill Sans Ultra Bold', sans-serif";
 
-function inti() {
+function init() {
     ctx=document.getElementById('canvas').getContext('2d');
     ctx.font = fontfamily;
     dologo();
@@ -10,7 +10,7 @@ function inti() {
 
 /** dologo function defition. This is the main funtion. It uses factorvalue to change the scale */
 function dologo() {
-    var offsety = 80;
+    var offsety = 80 ;
     ctx.restore();
     ctx.save();
     ctx.clearRect(0,0,600,400);
@@ -18,17 +18,23 @@ function dologo() {
     ctx.fillText("HTML", 31,60);
     ctx.translate(0,offsety);
     
+    
+
     // 5 sided orange background
     ctx.fillStyle = "#E34C26";
     ctx.beginPath();
-    ctx.moveTo(39,250);
-    ctx.lineTo(17,0);
-    ctx.lineTo(262,0);
-    ctx.lineTo(239,250);
-    ctx.lineTo(139,278);
+    ctx.moveTo(39, 250);
+    ctx.lineTo(17, 0);
+    ctx.lineTo(262, 0);
+    ctx.lineTo(239, 250);
+    ctx.lineTo(139, 278);
     ctx.closePath();
+    ctx.fill();
+
+    
+
     // right hand, lighter orange part of the background
-    ctx.fillstyle = "#F06529"; // official darker color
+    ctx.fillStyle = "#F06529";
     ctx.beginPath();
     ctx.moveTo(139, 257);
     ctx.lineTo(220, 234);
@@ -36,8 +42,11 @@ function dologo() {
     ctx.lineTo(139, 20);
     ctx.closePath();
     ctx.fill();
+    
+    
+
     //light gray, left hand side part of the five
-    ctx.fillstyle = "#EBEBEB"; // gray color
+    ctx.fillStyle = "#EBEBEB"; // gray color
     ctx.beginPath();
     ctx.moveTo(139, 113);
     ctx.lineTo(98, 113);
@@ -57,8 +66,11 @@ function dologo() {
     ctx.lineTo(76, 207);
     ctx.lineTo(139, 225);
     ctx.fill();
+
+    
+
     // white, right hand side of the 5
-    ctx.fillstyle = "#FFFFFF";
+    ctx.fillstyle = "#ffffff";
     ctx.beginPath();
     ctx.moveTo(139, 113);
     ctx.lineTo(139, 144);
@@ -77,6 +89,9 @@ function dologo() {
     ctx.lineTo(216, 51);
     ctx.closePath();
     ctx.fill();
+
+    
+
 }
 
 // the changescale function, response to user input.

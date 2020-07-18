@@ -13,8 +13,24 @@
     </head>
 
     <body onload="init();">
+        <canvas id="canvas" width="600" height="400">Your browser does not support the canvas element
+        </canvas>
         
-        
+        <article>
+            Scale percentage: <input id="slide" type="range" min="0" max="100" value="100" onChange="changescale(this.value)" step="10"/>
+            <!-- Note: slider treated as text field in some browsers. -->
+        </article>
+
+        <article>
+            Build on <a href="http://daniemon.com/tech/html5/html5logo/">work by Daniel Davis, et al</a>, but don't blame them for the fonts. 
+            Check out the use of <em>font-family</em> in the style element and the <em>fontfamily</em> variable in the script element for safe ways to do fonts. 
+            I did the scaling. Note also use of semantic elements.
+        </article>
+
+        <footer>
+            HTML5 Logo by <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a>
+        </footer>
+
 
     </body>
 
